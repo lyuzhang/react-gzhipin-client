@@ -28,7 +28,7 @@ export default class Register extends Component {
     })
   }
 
-  register = () =>{
+  register = async() =>{
     const {boss,username,password,rePassword} = this.state;
     console.log(boss,username,password);
     this.props.register({type: boss ? 'boss' : 'dashen', password, rePassword, username});

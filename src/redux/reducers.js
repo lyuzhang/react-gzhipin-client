@@ -30,18 +30,12 @@ function user(previousState = initUserState, action) {
   }
 }
 
-const initYyyState = {};
-function yyy(previousState = initYyyState, action) {
-  switch (action.type) {
-    default :
-      return previousState;
-  }
-}
+
 
 function getRedirectPath(type, header) {
   let path = '';
 
-  if (type === 'laoban') {
+  if (type === 'boss') {
     path = '/laoban';
   } else {
     path = '/dashen';
